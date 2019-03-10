@@ -1,0 +1,19 @@
+//
+//  Dummy.xcconfig
+//  Dicee
+//
+//  Created by Masterson, Evan on 10/03/2019.
+//  Copyright © 2019 Masterson, Evan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Create a Debug and Release xcconfig file with your keys
+// Target them in your build configurations
+// https://thoughtbot.com/blog/let-s-setup-your-ios-environments
+
+#include "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.debug.xcconfig"
+
+GOOGLE_APP_ID=INSERT GOOGLE APP ID HERE
+GOOGLE_AD_UNIT_ID=INSERT GOOGLE AD UNIT ID HERE

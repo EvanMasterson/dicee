@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3209058416E0A4442A74E645 /* Pods_Dicee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AAC182A0D9889CD7AC54E9 /* Pods_Dicee.framework */; };
 		7D518E2621CE973100EF529B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D518E2521CE973100EF529B /* AppDelegate.swift */; };
 		7D518E2821CE973100EF529B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D518E2721CE973100EF529B /* ViewController.swift */; };
 		7D518E2B21CE973100EF529B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D518E2921CE973100EF529B /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76AAC182A0D9889CD7AC54E9 /* Pods_Dicee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D518E2221CE973100EF529B /* Dicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D518E2521CE973100EF529B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D518E2721CE973100EF529B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +22,8 @@
 		7D518E2C21CE973200EF529B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D518E2F21CE973200EF529B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D518E3121CE973200EF529B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D739CEC2235646A00B73113 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		7D739CED2235647A00B73113 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		CC3EFE767FE4729089991C58 /* Pods-Dicee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.debug.xcconfig"; sourceTree = "<group>"; };
 		F07F8EC36E3E331A00E42EFD /* Pods-Dicee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3209058416E0A4442A74E645 /* Pods_Dicee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +51,8 @@
 		7D518E1921CE973100EF529B = {
 			isa = PBXGroup;
 			children = (
+				7D739CEC2235646A00B73113 /* Debug.xcconfig */,
+				7D739CED2235647A00B73113 /* Release.xcconfig */,
 				7D518E2421CE973100EF529B /* Dicee */,
 				7D518E2321CE973100EF529B /* Products */,
 				79779B8A5C9C8C8E40FF3A4D /* Pods */,
@@ -83,7 +84,6 @@
 		F2FE0E73E6AD0FDA9E6C28F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76AAC182A0D9889CD7AC54E9 /* Pods_Dicee.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +214,7 @@
 /* Begin XCBuildConfiguration section */
 		7D518E3221CE973200EF529B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D739CEC2235646A00B73113 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -275,6 +276,7 @@
 		};
 		7D518E3321CE973200EF529B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D739CED2235647A00B73113 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

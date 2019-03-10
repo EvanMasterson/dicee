@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    GADMobileAds.configure(withApplicationID: "INSERT GOOGLE APP ID")
+    GADMobileAds.configure(withApplicationID: Bundle.main.object(forInfoDictionaryKey: "GOOGLE_APP_ID") as! String)
     checkPermission()
     return true
   }

@@ -70,7 +70,7 @@ class ViewController: UIViewController {
   }
   
   func setupBannerView() {
-    bannerView.adUnitID = "INSERT GOOGLE ADD UNIT ID"
+    bannerView.adUnitID = Bundle.main.object(forInfoDictionaryKey: "GOOGLE_AD_UNIT_ID") as? String
     bannerView.rootViewController = self
     bannerView.load(GADRequest())
   }
